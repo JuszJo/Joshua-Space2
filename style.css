@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-family: Product Sans, Helvetica;
+    font-size: 16px;
+}
+
+body{
+    background-color: white;
+}
+
+#home{
+    border-bottom: 2px solid #484552;
+}
+
+nav a:hover{
+    border-bottom: 2px solid #484552;
+}
+
+.navbar{
+    width: 100%;
+    margin: 15px 0 0;
+}
+
+.nav-items{
+    font-size: 1.3rem;
+}
+
+a, a:visited, a:hover, button, button:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+button{
+    border-radius: 10px;
+    font-size: 1.5rem;
+    transition: all ease-in-out 0.25s;
+}
+
+.section1 a{
+    color: #393841;
+}
+
+.headerwrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px 0 40px 0;
+    /*margin: 0 200px;*/
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header h1{
+    max-width: 35rem;
+    margin: 0 0 2rem 0;
+}
+.header p{
+    color: #484552;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    max-width: 30rem;
+    margin: 0 0 2rem 0;
+}
+
+.intro{
+    font-size: 4.0rem;
+    margin: 0px;
+}
+
+/*.section1 button{
+    margin-top: 5px;
+    padding: 10px 25px;
+    color: #F2F2F2;
+    font-weight: bold;
+    background-color: #484552;
+    border: 2px solid #484552;
+}*/
+
+.section1 button:hover{
+    color: #484552;
+    /*background-color: #F2F2F2;*/
+    background-color: white;
+    text-align: center;
+}
+
+.image-cont{
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.image{
+    width: 700px;
+}
+
+.section-about-cont{
+    color: #F2F2F2;
+    background-color: #484552;
+}
+
+.section-about-flex{
+    display: flex;
+    justify-content: center;
+    /*margin: 0 200px;*/
+}
+
+.section-about{
+    display: flex;
+    flex-direction: column;
+    padding-right: 370px;
+}
+
+.section-about-h1{
+    display: flex;
+}
+
+.section-about h1{
+    margin: 20px 0;
+}
+
+.section-about span{
+    border-bottom: 3px solid #F2F2F2;
+    font-size: 2rem;
+}
+
+.section-about-article{
+    display: flex;
+}
+
+.section-about article{
+    display: flex;
+    line-height: 2rem;
+    margin: 20px 0;
+    max-width: 900px;
+    color: #DBDBDB;
+}
+
+.section-about-tech{
+    display: flex;
+    gap: 400px;
+    align-items: center;
+}
+
+.section-about article, .section-about p{
+    font-size: 1.3rem;
+}
+
+.section-about button{
+    background-color: #F2F2F2;
+    color: #393841;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 25px;
+    border: 2px solid #F2F2F2;
+}
+
+.section-about button:hover{
+    color: #F2F2F2;
+    background-color: #393841;
+}
+
+.project-cont{
+    background-color: #393841;
+}
+
+.project-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-cont-h1-flex{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 30px 0;
+}
+
+.project-cont h1{
+    font-size: 2rem;
+    color: #F2F2F2;
+    padding-right: 70.5rem;
+}
+
+.project-cont span{
+    border-bottom: 3px solid #F2F2F2;
+}
+
+.project section{
+    display: flex;
+    max-width: 68.5rem;
+    /*max-width: 78.5rem;*/
+    flex-wrap: wrap;
+    color: #DBDBDB;
+    justify-content: space-between;
+
+}
+
+.project-items{
+    max-width: 20rem;
+    background-color: #484552;
+    border-radius: 10px;
+    margin: 20px 0;
+    transition: all ease-in-out 0.15s;
+}
+
+.project-items:hover{
+    cursor: pointer;
+    transform: scale(1.020);
+}
+
+.project-items p:nth-child(2){
+    font-size: 1.1rem;
+    padding: 20px 20px;
+}
+
+.project h2, .project p{
+    padding: 0 20px;
+}
+
+.project h2{
+    margin: 20px 20px 5px 20px;
+    font-size: 1.4rem;
+    color: #DBDBDB;
+}
+
+.project p{
+    margin: 20px 20px 15px 20px;
+    line-height: 1.7rem;
+    color: #DBDBDB;
+}
+
+.project-items-tech{
+    font-size: 0.9rem;
+}
+
+
+
+@media only screen and (max-width: 1500px){
+    html{
+        font-size: 15px;
+    }
+    .image{
+        width: 600px;
+    }
+    .section-about{
+        padding-right: 235px;
+    }
+    .project-cont h1 {
+        padding-right: 67.4rem;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    html{
+        font-size: 14px;
+    }
+    .image{
+        width: 500px;
+    }
+    .section-about{
+        padding-right: 74px;
+    }
+    .project-cont h1 {
+        padding-right: 61.5rem;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    html{
+        font-size: 13px;
+    }
+    .section-about{
+        padding-right: 50px;
+    }
+    .project-cont h1 {
+        padding-right: 64.5rem;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    html{
+        font-size: 12px;
+    }
+    .headerwrap{
+        padding-top: 50px;
+    }
+    .image{
+        width: 490px;
+    }
+    .section-about{
+        padding-right: 0;
+    }
+    .project-cont h1 {
+        padding-right: 66.5rem;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    .image{
+        display: none;
+    }
+    .navbar ul{
+        gap: 5rem;
+    }
+    .navbar a{
+        margin: 0 1rem;
+    }
+    .headerwrap{
+        padding-bottom: 30px;
+    }
+    .header{
+        padding-right: 10rem;
+    }
+    .header h1{
+        max-width: 60rem;
+    }
+    .header p{
+        max-width: 50rem;
+    }
+    .section-about article{
+        max-width: 60rem;
+    }
+    .section-about-tech{
+        gap: 200px;
+    }
+    .project-items p:nth-child(2) {
+        padding: 20px 20px 20px 0;
+    }
+    .project-cont h1 {
+        padding-right: 51.5rem;
+    }
+    .project section{
+        justify-content: space-evenly;
+    }
+    .project-items{
+        max-width: 25rem;
+    }
+    .project h2, .project p{
+        padding: 0 0;
+    }
+}
+
+@media only screen and (max-width: 760px){
+    .header{
+        padding-right: 0;
+    }
+    .section-about-tech{
+        gap: 170px;
+    }
+    .header h1, .header p{
+        max-width: 50rem;
+    }
+    .section-about article{
+        max-width: 50rem;
+    }
+    .project-cont h1{
+        padding-right: 41.5rem;
+    }
+    .project-items{
+        max-width: 22rem;
+    }
+    .project-items p:nth-child(2){
+        max-width: 20rem;
+    }
+    
+}
+
+@media only screen and (max-width: 660px){
+    .section-about-tech{
+        gap: 50px;
+    }
+    .header h1, .header p{
+        max-width: 40rem;
+    }
+    .section-about article{
+        max-width: 40rem;
+    }
+    .project-cont h1{
+        padding-right: 31.5rem;
+    }
+    .project-items{
+        max-width: 30rem;
+    }
+    .project section{
+        flex-direction: column;
+    }
+    .project-items p:nth-child(2){
+        max-width: 50rem;
+    }
+    
+}
+
+@media only screen and (max-width: 560px){
+    html{
+        font-size: 11px;
+    }
+    .header{
+        margin: 0 2rem;
+    }
+    .section-about button{
+        display: none;
+    }
+    .section-about{
+        max-width: 30rem;
+        margin: 0 2rem;
+    }
+    .section-about-tech{
+        gap: 50px;
+    }
+    .header h1, .header p{
+        max-width: 30rem;
+    }
+    .section-about article{
+        max-width: 40rem;
+    }
+    .project-cont h1{
+        padding-right: 22rem;
+    }
+}
+@media only screen and (max-width: 460px){
+    .project-items{
+        max-width: 25rem;
+    }
+}
