@@ -10,7 +10,7 @@
     {
       "src": "banner.png",
       "type": "image/png",
-      "sizes": "128x128"
+      "sizes": "192x192"
     }
   ],
   "start_url": ".",
