@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    outline: none;
 }
 
 html{
@@ -40,12 +41,6 @@ ul{
     display: flex;
     justify-content: center;
     gap: 100px;
-}
-
-button{
-    border-radius: 10px;
-    font-size: 1.5rem;
-    transition: all ease-in-out 0.25s;
 }
 
 .section1 a{
@@ -255,7 +250,113 @@ button{
     font-size: 0.9rem;
 }
 
+.contact-cont{
+    background-color: #484552;
+}
 
+.contact-flex{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 5rem 0;
+}
+
+.contact{
+    color: #DBDBDB;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+.contact h1, .contact span{
+    color: white;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.contact h1{
+}
+
+.contact section{
+    display: flex;
+    gap: 15rem;
+}
+
+.p-flex{
+    display: flex;
+}
+
+.contact p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    max-width: 30rem;
+    
+}
+
+fieldset{
+    display: inline;
+    border-style: none;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-div{
+    background-color: #393841;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+input, textarea{
+    color: #DBDBDB;
+    background-color: inherit;
+    border-style: none;
+    font-family: Product-sans, Helvetica;
+    background-color: #393841;
+    border-radius: 5px;
+}
+    
+input{
+    padding: 1rem 0 1rem 1rem;
+}
+
+textarea{
+    resize: none;
+    padding: 1.5rem 0 0 1rem;
+}
+
+textarea::-webkit-scrollbar{
+    display: none;
+}
+
+form div:nth-child(3){
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    font-size: 0.5rem;
+    border-radius: 5px;
+    border: 0 solid #393841;
+    font-size: 1rem;
+    transition: all ease-in-out 0.25s;
+    background-color: #393841;
+    color: #F2F2F2;
+    padding: 0.8rem 0.5rem;
+}
+
+button:hover{
+    background-color: #F2F2F2;
+    color: #393841;
+}
+
+.contact img{
+    height: 18rem;
+}
 
 @media only screen and (max-width: 1500px){
     html{
