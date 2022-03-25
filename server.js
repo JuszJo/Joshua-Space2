@@ -31,4 +31,4 @@ app.post('/', (req, res) => {
     res.send("Thank you for your details");
 });
 
-app.listen(port, () => console.log(`http://127.0.0.1:${process.env.PORT}`));
+app.listen(process.env.PORT);
