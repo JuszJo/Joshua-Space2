@@ -10,14 +10,14 @@ app.use(exp.urlencoded({
 }));
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/login.html');
+    res.sendFile(__dirname + '/index.html');
     app.use('/', exp.static(__dirname));
 });
 
 app.post('/', (req, res) => {
     var details = req.body;
     var MC= require('mongodb').MongoClient;
-    var url = process.env.MONGODB_URI;
+    var url = `mongodb+srv://joshua:ubani-wokoma@cluster0.xjoqb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
     MC.connect(url, (err, dbase) => {
         if (err) throw err;
         console.log(`Connected to Mongodb Atlas`);
@@ -31,4 +31,5 @@ app.post('/', (req, res) => {
     res.send("Thank you for your details");
 });
 
-app.listen(process.env.PORT);
+app.listen(port);
+//app.listen(process.env.PORT);
