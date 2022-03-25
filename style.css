@@ -82,6 +82,7 @@ button{
 .intro{
     font-size: 4.0rem;
     margin: 0px;
+    color: #393841;
 }
 
 /*.section1 button{
@@ -240,8 +241,8 @@ button{
 
 .project h2{
     margin: 20px 20px 5px 20px;
-    font-size: 1.4rem;
-    color: #DBDBDB;
+    font-size: 1.5rem;
+    color: white;
 }
 
 .project p{
@@ -387,6 +388,9 @@ button{
 }
 
 @media only screen and (max-width: 660px){
+    .navbar{
+        display: none;
+    }
     .section-about-tech{
         gap: 50px;
     }
