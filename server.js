@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
     var details = req.body;
     var MC= require('mongodb').MongoClient;
-    var url = `mongodb+srv://joshua:ubani-wokoma@cluster0.xjoqb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+    var url = process.env.MONGODB_URI;
     MC.connect(url, (err, dbase) => {
         if (err) throw err;
         console.log(`Connected to Mongodb Atlas`);
@@ -31,5 +31,4 @@ app.post('/', (req, res) => {
     res.send("Thank you for your details");
 });
 
-app.listen(port);
-//app.listen(process.env.PORT);
+app.listen(process.env.PORT);
