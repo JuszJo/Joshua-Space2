@@ -514,7 +514,9 @@ button:hover{
     .project-items p:nth-child(2){
         max-width: 50rem;
     }
-    
+    .contact h1, .contact div, .contact section{
+        margin-bottom: 1rem;
+    }
 }
 
 @media only screen and (max-width: 560px){
@@ -546,6 +548,7 @@ button:hover{
     .contact{
         max-width: 30rem;
     }
+    
 }
 @media only screen and (max-width: 460px){
     .project-items{
