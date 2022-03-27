@@ -12,7 +12,7 @@ function sendmail(user){
             pass: process.env.MAIL_PASSWORD,
             clientId: process.env.CLIENT_ID,
             clientSecret: process.env.CLIENT_SECRET,
-            refreshToken: process.env.REFRESH_TOKEN,
+            refreshToken: process.env.REFRESH_TOKEN
         }
     });
 
