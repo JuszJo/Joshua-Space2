@@ -1,34 +1,27 @@
-var exp = require("express");
-var app = exp(); 
+var express = require('express');
+var sendmail = require('./mail');
+//const connect = require('./mongo');
+
+var app = express();
 var port = 3000;
 
-const dotenv = require('dotenv');
-dotenv.config();
-
-app.use(exp.urlencoded({
+app.use(express.urlencoded({
     extended : true
 }));
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
-    app.use('/', exp.static(__dirname));
+    res.sendFile(__dirname + '/index.html')
+    app.use(express.static(__dirname));
 });
 
 app.post('/', (req, res) => {
-    var details = req.body;
-    var MC= require('mongodb').MongoClient;
-    var url = process.env.MONGODB_URI;
-    MC.connect(url, (err, dbase) => {
-        if (err) throw err;
-        console.log(`Connected to Mongodb Atlas`);
-        var data = dbase.db(`mydb`);
-        data.collection(`details`).insertOne(details, (err, res) => {
-            if(err) throw "Could not insert";
-            console.log(`inserted Data into Collection`);
-            dbase.close();
-        });
-    });
-    res.send("Thank you for your details");
-});
+    //connect(req.body);
+    sendmail(req.body)
+    res.send('Thank You For Your Details');
+})
 
 app.listen(process.env.PORT);
+
+/*app.listen(port, () => {
+    console.log(`http://localhost:${port}`);
+});*/
