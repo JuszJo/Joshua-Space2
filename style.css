@@ -361,6 +361,17 @@ button:hover{
     height: 19rem;
 }
 
+footer{
+    background-color: #393841;
+    color: #dbdbdb5e;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+footer p{
+    padding: 0.05rem 0;
+}
+
 @media only screen and (max-width: 1500px){
     html{
         font-size: 15px;
