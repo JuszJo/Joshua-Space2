@@ -16,8 +16,10 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
     //connect(req.body);
-    sendmail(req.body)
-    res.send('Thank You For Your Details');
+    sendmail(req.body);
+    setTimeout(() => {
+        res.redirect('/');
+    }, 1000);
 })
 
 app.listen(process.env.PORT);
